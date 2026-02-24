@@ -1,160 +1,70 @@
-# Fraud-Detection-and-Risk-Analytics-System
+# Getting Started with Create React App
 
-A full-stack web application designed to detect suspicious financial
-transactions using rule-based risk evaluation and dynamic trust score
-management.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-------------------------------------------------------------------------
+## Available Scripts
 
-## 📌 Project Overview
+In the project directory, you can run:
 
-The Fraud Detection and Risk Analytics System monitors user transactions
-in real-time, evaluates fraud risk based on predefined rules, and
-dynamically updates user trust scores.
+### `npm start`
 
-### Key Features:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
--   Secure JWT Authentication
--   Rule-Based Fraud Detection Engine
--   Dynamic Trust Score Management
--   Admin Monitoring Dashboard
--   Risk Analytics Visualization
--   Device & Country Tracking
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-------------------------------------------------------------------------
+### `npm test`
 
-## 🏗️ System Architecture
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-The system follows a three-tier architecture:
+### `npm run build`
 
-1.  Presentation Layer -- React.js (Frontend)\
-2.  Application Layer -- C++ (Crow Framework)\
-3.  Data Layer -- SQLite Database
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Flow:\
-User → Frontend → Backend → Fraud Engine → Database → Dashboard
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-------------------------------------------------------------------------
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## 🛠️ Technology Stack
+### `npm run eject`
 
-### Backend
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
--   C++
--   Crow Web Framework
--   SQLite
--   OpenSSL (SHA-256 Hashing)
--   JWT Authentication
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### Frontend
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
--   React.js
--   Axios
--   React Router
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### Database
+## Learn More
 
--   SQLite
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-------------------------------------------------------------------------
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## 🔐 Authentication & Security
+### Code Splitting
 
--   SHA-256 password hashing
--   JWT-based authentication
--   Role-Based Access Control (USER / ADMIN)
--   Block/Unblock user mechanism
--   Device tracking
--   Server-side validation
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-------------------------------------------------------------------------
+### Analyzing the Bundle Size
 
-## 📊 Fraud Detection Logic
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-Risk is evaluated based on:
+### Making a Progressive Web App
 
--   Transaction Amount
--   Country Mismatch
--   New Device Detection
--   Transaction Frequency
--   Spending Behavior Analysis
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Risk Classification
+### Advanced Configuration
 
-  Risk Score   Level
-  ------------ --------
-  0 -- 39      LOW
-  40 -- 59     MEDIUM
-  60 -- 79     HIGH
-  80+          FRAUD
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-------------------------------------------------------------------------
+### Deployment
 
-## 📈 Trust Score Mechanism
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
--   Risk ≥ 80 → -20\
--   Risk ≥ 60 → -10\
--   Risk ≥ 40 → -5\
--   Safe transaction → +3
+### `npm run build` fails to minify
 
-Trust Score Range: 0 -- 100
-
-------------------------------------------------------------------------
-
-## 👤 User Features
-
--   Register & Login
--   Create Transaction
--   View Trust Score
--   View Last 20 Transactions
--   View Risk Level
-
-------------------------------------------------------------------------
-
-## 🛡️ Admin Features
-
--   View All Users
--   Monitor Trust Scores
--   Block/Unblock Users
--   View Risk Analytics Chart
-
-------------------------------------------------------------------------
-
-## ⚙️ Installation & Setup
-
-### Backend
-
-``` bash
-cmake .
-make
-./server
-```
-
-Runs at: http://localhost:18080
-
-### Frontend
-
-``` bash
-cd frontend
-npm install
-npm start
-```
-
-Runs at: http://localhost:3000
-
-------------------------------------------------------------------------
-
-## 🚀 Future Enhancements
-
--   Machine Learning-based fraud detection
--   Cloud deployment
--   Real-time IP geolocation API
--   Email/SMS fraud alerts
--   Payment gateway integration
--   Mobile application
-
-------------------------------------------------------------------------
-
-## 📌 License
-
-This project is developed for academic purposes.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
